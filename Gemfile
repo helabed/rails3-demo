@@ -62,13 +62,6 @@ gem 'webrat', '0.7.2'
 gem 'will_paginate', '3.0.pre2'
 
 
-
-
-
-
-
-
-
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'

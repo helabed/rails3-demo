@@ -95,12 +95,12 @@ namespace :deploy do
 end
 
 # optional task to reconfigure databases.yml by simlinking it
-#after "deploy:update_code", :symlink_database_yml
-#desc "symbolically link shared_config/database.yml into the current release path"
-#task :symlink_database_yml, :roles => :app do
-#  db_config = "#{deploy_to}/shared_config/database.yml"
-#  run "ln -nsf #{db_config} #{release_path}/config/database.yml"
-#end
+after "deploy:update_code", :symlink_database_yml
+desc "symbolically link shared_config/database.yml into the current release path"
+task :symlink_database_yml, :roles => :app do
+  db_config = "#{deploy_to}/shared/database.yml"
+  run "ln -nsf #{db_config} #{release_path}/config/database.yml"
+end
 
 # optional task to reconfigure development.sqlite3 by simlinking it
 #after "deploy:update_code", :symlink_development_sqlite3

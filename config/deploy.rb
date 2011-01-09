@@ -1,5 +1,10 @@
 	#set :application, "set your application name here"
-	#set :repository,  "set your repository location here"
+	#set :repository,  "set your repository location here
+
+#
+# Just add "require 'bundler/capistrano'" in your Capistrano deploy.rb, and
+# Bundler will be activated after each new deployment.
+require 'bundler/deployment'
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location

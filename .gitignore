@@ -1,5 +1,6 @@
 .DS_Store
 mkmf.log
+.bundle
 config/database.yml
 coverage
 coverage.data

@@ -34,7 +34,7 @@ require 'bundler/capistrano'
 # be sure to change these
 set :user, 'rubywebw'
 set :domain, 'rails3demo.rubywebworks.com'
-set :application, 'demo'
+set :application, 'rails3-demo'
 set :github_user, 'helabed'
 set :github_domain, 'github.com'
 

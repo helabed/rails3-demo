@@ -22,3 +22,6 @@ gem 'database_cleaner', '0.5.2'
 gem 'selenium-client', '1.2.18'
 gem 'term-ansicolor', '1.0.5'
 gem 'webrat', '0.7.2'
+
+gem 'capistrano'
+gem 'capistrano-ext'
